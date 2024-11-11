@@ -1,3 +1,6 @@
+import { FaGithub } from "react-icons/fa";
+import { MdOutlineArrowOutward } from "react-icons/md";
+
 interface ProjetProps {
     image: string;
     titre: string;
@@ -9,35 +12,47 @@ interface ProjetProps {
 }
 function Projets({ image, titre, description, annee, role, lienDuSite, demoUrl } : ProjetProps) {
   return (
-    <div>
-        <div>
+    <div className="flex gap-10 items-center">
+        <div className="bg-grayColor w-[37rem] h-[37rem] flex justify-center items-center rounded-xl">
             {image ? (
-            <img src={image} alt="Projet" className="w-full h-auto" />
+            <img src={image} alt="Projet" className="w-[30rem] h-[21rem] rounded-xl" />
             ) : (
             <div className="bg-gray-200 w-full h-64 flex items-center justify-center">
-                <span>Aucune image disponible</span>
+                <span className="text-black">Aucune image disponible</span>
             </div>
             )}
         </div>
-        <div>
-            <h1>{titre}</h1>
-            <p>{description}</p>
+        <div className="w-[36rem]">
+            <h1 className="font-paragraph text-xl">{titre}</h1>
+            <p className="font-paragraph font-extralight text-xs leading-loose pt-6">{description}</p>
 
-            <h3>PROJET INFO</h3>
-            <hr />
-            <div>
-                <p>Year</p>
-                <p>{annee}</p>
+            <h3 className="pt-6 pb-4 font-light text-xs">PROJET INFO</h3>
+            <hr className="border-grayColor" />
+            <div className="flex justify-between py-4">
+                <p className="font-paragraph font-extralight text-xs">Year</p>
+                <p className="font-paragraph font-extralight text-xs">{annee}</p>
             </div>
-            <hr className="stroke-grayColor"/>
-            <div>
-                <p>Role</p>
-                <p>{role}</p>
+            <hr className="border-grayColor"/>
+            <div className="flex justify-between py-4">
+                <p className="font-paragraph font-extralight text-xs">Role</p>
+                <p className="font-paragraph font-extralight text-xs">{role}</p>
             </div>
-            <hr />
-            <div>
-                <p><a href={lienDuSite} target="_blank" rel="noopener noreferrer">Lien du site</a></p>            
-                <p><a href={demoUrl} target="_blank" rel="noopener noreferrer">Voir sur Github</a></p>            
+            <hr className="border-grayColor"/>
+            <div className="flex gap-6 pt-6">
+            <p className=" text-greenColor">
+                <a href={lienDuSite} className="flex gap gap-1 items-center">
+                    <span>Lien du site</span>
+                    <MdOutlineArrowOutward className="inline"/>
+                </a>
+                <hr className="border-greenColor"/>
+            </p>                
+            <p className=" text-greenColor">
+                <a href={demoUrl} className="flex gap gap-1 items-center">
+                    <span>Voir sur Github</span>
+                    <FaGithub className="inline"/>
+                </a>
+                <hr className="border-greenColor"/>
+            </p>            
             </div>
         </div>
     </div>
