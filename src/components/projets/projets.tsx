@@ -13,16 +13,16 @@ interface ProjetProps {
 function Projets({ image, titre, description, annee, role, lienDuSite, demoUrl } : ProjetProps) {
   return (
     <div className="flex gap-10 items-center">
-        <div className="bg-grayColor w-[37rem] h-[37rem] flex justify-center items-center rounded-xl">
+        <div className="bg-grayColor md:w-[28rem] xl:w-[37rem] md:h-[28rem] xl:h-[37rem] flex justify-center items-center rounded-xl">
             {image ? (
-            <img src={image} alt="Projet" className="w-[30rem] h-[21rem] rounded-xl" />
+            <img src={image} alt="Projet" className="md:w-[24rem] xl:w-[30rem] md:h-[18rem] xl:h-[21rem] rounded-xl" />
             ) : (
             <div className="bg-gray-200 w-full h-64 flex items-center justify-center">
                 <span className="text-black">Aucune image disponible</span>
             </div>
             )}
         </div>
-        <div className="w-[36rem]">
+        <div className="md:w-[30rem] xl:w-[36rem]">
             <h1 className="font-paragraph text-xl">{titre}</h1>
             <p className="font-paragraph font-extralight text-xs leading-loose pt-6">{description}</p>
 
