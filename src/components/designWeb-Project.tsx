@@ -1,6 +1,17 @@
+import Projets from "./projets/projets"
+
 function ProjetDesign() {
   return (
-    <div>DesignWebProject</div>
+    <div>
+        <Projets 
+        image=""
+        titre=""
+        description=""
+        annee=""
+        role=""
+        lienDuSite=""
+        demoUrl=""/>
+    </div>
   )
 }
 
