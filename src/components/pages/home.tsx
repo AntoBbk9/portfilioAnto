@@ -18,7 +18,7 @@ function Home() {
                 qui allient esthétisme et fonctionnalité pour offrir une expérience utilisateur optimale.</p>
             </div>
             <div className="flex gap-4 pt-6">
-                <Button /> 
+                <Button text="Contactez Moi" /> 
                 <div className="w-10 h-10 rounded-full bg-grayColor flex items-center justify-center">
                     <FaLinkedinIn className="text-greenColor"/>
                 </div>
