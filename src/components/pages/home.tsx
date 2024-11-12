@@ -20,10 +20,10 @@ function Home() {
             <div className="flex gap-4 pt-6">
                 <Button text="Contactez Moi" /> 
                 <div className="w-10 h-10 rounded-full bg-grayColor flex items-center justify-center">
-                    <FaLinkedinIn className="text-greenColor"/>
+                    <a href="https://www.linkedin.com/in/antoinette-belebele-443943260/"><FaLinkedinIn className="text-greenColor"/></a>
                 </div>
                 <div className="w-10 h-10 rounded-full bg-grayColor flex items-center justify-center">
-                    <FaGithub className="text-greenColor"/>
+                    <a href="https://github.com/AntoBbk9"><FaGithub className="text-greenColor"/></a>
                 </div>
             </div>
         </div>

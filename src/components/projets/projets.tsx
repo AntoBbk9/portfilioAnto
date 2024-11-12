@@ -26,7 +26,7 @@ function Projets({ image, titre, description, annee, role, lienDuSite, demoUrl }
             <h1 className="font-paragraph text-xl">{titre}</h1>
             <p className="font-paragraph font-extralight text-xs leading-loose pt-6">{description}</p>
 
-            <h3 className="pt-6 pb-4 font-light text-xs">PROJET INFO</h3>
+            <h3 className="pt-6 pb-4 font-light text-xs">INFO PROJET</h3>
             <hr className="border-grayColor" />
             <div className="flex justify-between py-4">
                 <p className="font-paragraph font-extralight text-xs">Année</p>
