@@ -29,12 +29,12 @@ function Projets({ image, titre, description, annee, role, lienDuSite, demoUrl }
             <h3 className="pt-6 pb-4 font-light text-xs">PROJET INFO</h3>
             <hr className="border-grayColor" />
             <div className="flex justify-between py-4">
-                <p className="font-paragraph font-extralight text-xs">Year</p>
+                <p className="font-paragraph font-extralight text-xs">Année</p>
                 <p className="font-paragraph font-extralight text-xs">{annee}</p>
             </div>
             <hr className="border-grayColor"/>
             <div className="flex justify-between py-4">
-                <p className="font-paragraph font-extralight text-xs">Role</p>
+                <p className="font-paragraph font-extralight text-xs">Rôle</p>
                 <p className="font-paragraph font-extralight text-xs">{role}</p>
             </div>
             <hr className="border-grayColor"/>

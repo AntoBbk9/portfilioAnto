@@ -5,6 +5,7 @@ import Header from './components/header/header'
 import About from './components/pages/about'
 import ProjetDeveloppement from './components/developpementWeb-Projects'
 import ProjetDesign from './components/designWeb-Project'
+import Projects from './components/pages/projects'
 
 function App() {
 
@@ -14,9 +15,10 @@ function App() {
       <Header />
       <Routes>
       <Route>
-        <Route path='/' element={<Home />}>
-          <Route path="projets-developpement" element={<ProjetDeveloppement />} />
-          <Route path="projets-design" element={<ProjetDesign />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />}>
+          <Route path="projects-development" element={<ProjetDeveloppement />} />
+          <Route path="projects-design" element={<ProjetDesign />} />
         </Route>
         <Route path='/about' element={<About />} />
       </Route>

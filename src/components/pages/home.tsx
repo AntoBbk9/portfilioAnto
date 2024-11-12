@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import Button from "../button/button"
-import { Link, Outlet } from "react-router-dom"
+import { Link } from "react-router-dom"
+import Projets from "../projets/projets"
 
 function Home() {
   return (
@@ -31,21 +32,25 @@ function Home() {
     <hr className="border-grayColor w-full"/> 
     <div className="p-4">
         <h1 className="font-sans font-bold text-3xl">Projets Réalisés</h1>
-        <div className="flex gap-3 items-center">
-        <Link to="/projets-developpement">
-            <p className="font-paragraph font-extralight text-xs">Projets de Développement Web</p>
-        </Link>
-            |
-        <Link to="/projets-design">
-            <p className="font-paragraph font-extralight text-xs">Projets de Web Design</p>
-        </Link>
-        </div>
         <div>
-            <Outlet />
+            <Projets
+                image="https://st3.depositphotos.com/14862852/17648/i/450/depositphotos_176480284-stock-photo-desktop-computer-blank-screen-digital.jpg"
+                titre="DR Norman"
+                description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                annee="2024"
+                role="Developpeuse web"
+                lienDuSite=""
+                demoUrl=""
+            />
+        </div>
+        <div className="flex justify-end">
+            <Link to="/projects">
+                <p className="py-8 font-bold border-b-2 border-white pb-1">Voir plus</p>
+            </Link>
         </div>
     </div>
     <hr className="border-grayColor w-full"/> 
-    <div className="flex gap-20">
+    <div className="flex gap-32">
         <h1 className="font-sans font-bold text-3xl">A propos de Moi</h1>
         <div className="w-[40rem]">
             <h2>Développeuse full-stack et web designer, j'ai un diplôme en pedagogie generale.</h2>
@@ -65,7 +70,7 @@ function Home() {
     </div>
     <hr className="border-grayColor w-full"/> 
     <div>
-        
+
     </div>
     </div>
   )
